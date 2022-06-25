@@ -166,7 +166,7 @@ table {
         justify-content: center;
         text-align: center;
         text-transform: uppercase;
-        font-size: 24px;
+        font-size: 0;
         padding: 0;
         height: 45px;
         line-height: 45px;
@@ -174,10 +174,8 @@ table {
         font-weight: bold;
         width: 100%;
         color: #f7dca9;
-        border: vwm(3px) solid #e7f2f4;
-        background-image: linear-gradient(to bottom,#865b8f,#604254);
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
+        border: none;
+        background: url("../images/label-dangnhap.png") 0/100% no-repeat;
         
        span{
          display: block;
@@ -188,23 +186,6 @@ table {
         &:last-child{
           float: right;
           margin-right: 0;
-          display: none;
-        }
-        &.active{
-          width: 100%;
-          background-image: linear-gradient(to bottom,#d5901c,#fae777);
-          color: #190603;
-          font-weight: 900;
-          font-size: 30px;
-          border: vwm(4px) solid #f6d06b;
-          span{
-            display: block;
-            background: -webkit-linear-gradient(-86deg, #f2e774 5%, #faf3ae 53%, #ffffff 91%);
-            -webkit-background-clip: text;
-            -webkit-text-stroke: 4px transparent;
-            color: #000;
-            -webkit-text-fill-color: #000;
-          }
         }
         
       }
@@ -216,17 +197,16 @@ table {
     }
     .form-control {
       height: 40px;
-      background-color: #00000099!important;
-      border: 1px solid #fff!important;
-      box-shadow: 0px 1px 6px #45ebff;
-      outline: 0!important;
-      margin: 0 auto;
-      font-size: 14px;
-      color: #767879!important;
-      border-radius: 10px;
+    padding: 10px;
+    background: 
+    linear-gradient(#fff 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(to bottom, #eaa754, #fffe35) border-box;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    display: inline-block;
       padding: 0 vwm(45px) 0 vwm(50px);
       &::placeholder{
-        color: #767879;
+        color: #723810;
       }
     }
     .user-name{
@@ -274,7 +254,7 @@ table {
       border: vwm(3px) solid #3a1e58;
       box-shadow:inset 0 0 10px #474699;
       border-radius: vwm(10px);
-      background-color: #00000061;
+      background-color: #000;
       position: relative;
       margin-bottom: vwm(80px);
     }
@@ -332,7 +312,7 @@ table {
     margin: vwm(20px) auto;
     background: url("../images/bvd-tach_0019_Group-1.png") 0/100% no-repeat;
     width: vwm(448px);
-    height: vwm(92px);
+    height: vwm(114px);
     &.btn-ios{
       background: url("../images/btn-download-ios.png") 0/100% no-repeat;
     }
@@ -534,7 +514,7 @@ table {
     font-size: 14px;
   }
   .wrapper-sum{
-    background: url("../images/bg.jpg") 50% 0 no-repeat #000000;
+    background: url("../images/bg.jpg") 50% -110px no-repeat #000000;
     background-size: 1920px auto;
     width: 100%;
     .box-top{
@@ -589,21 +569,21 @@ table {
       .nav-tabs{
         padding: 0 32px;
         a{
-          font-size: 24px;
+          font-size: 0;
           height: 77px;
           line-height: 77px;
           margin-right: 1%;
           font-weight: bold;
-          border: 4px solid #e7f2f4;
+          background: url("../images/label-dangnhap.png") 0/100% no-repeat;
           margin-bottom: -3px;
-          width: 37%;
+          width: 100%;
+    
           &:last-child{
             display: flex;
           }
           &.active{
-            width: 62%;
-            font-size: 50px;
-            border: 3px solid #f6d06b;
+            width:100%;
+            font-size:0;
           }
           &:nth-child(1){
             border-radius: 0;
@@ -619,13 +599,23 @@ table {
         font-size: 16px;
         height: 70px;
         padding: 0 45px;
-        border-radius: 23px;
+        background: 
+          linear-gradient(#fff 0 0) padding-box, /*this is your grey background*/
+          linear-gradient(to bottom, #eaa754, #fffe35) border-box;
+        color: #723810;
+        border: 3px solid transparent;
+        border-radius: 15px;
+        display: inline-block;
+       
       }
       .tab-content{
         padding: 20px 20px 70px;
-        border: 0px solid #3a1e58;
-        box-shadow:inset 0 0 10px #474699;
-        border-radius: 10px;
+        background: 
+          linear-gradient(#000 0 0) padding-box, /*this is your grey background*/
+          linear-gradient(to bottom, #eaa754, #fffe35) border-box;
+          border: 3px solid transparent;
+        border-radius: 20px;
+        box-shadow: 0px 1px 6px #8d560c;
         margin-bottom: 100px;
       }
       .user-name{
@@ -667,9 +657,9 @@ table {
       height: 132px;
     }
     .btn-download{
-      margin: 20px auto;
+      margin: 0 auto 20px;
       width: 448px;
-      height: 92px;
+      height: 114px;
     }
     .btn-dns{
       width: 398px;
@@ -799,10 +789,12 @@ table {
   justify-content: space-between;
   margin-bottom: 0!important;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.6) !important;
-  border: 1px solid #fff !important;
-  border-radius: 10px;
-  box-shadow: 0px 1px 6px #45ebff;
+  background: 
+  linear-gradient(#000 0 0) padding-box, /*this is your grey background*/
+  linear-gradient(to bottom, #eaa754, #fffe35) border-box;
+  border: 2px solid transparent;
+border-radius: 15px;
+  
 }
 .box-captcha-2{
   position: relative;
@@ -832,14 +824,14 @@ table {
   width: 100%;
   margin-right: 15px;
   height: 40px;
-  color: #767879;
+  color: #fff;
   padding: 0 vwm(45px);
   margin-left: 5px;
   margin-right: 15px;
   border: none;
   flex: 1;
   &::placeholder{
-    color: #767879;
+    color: #fff;
   }
 }
 #refresh{
@@ -866,6 +858,11 @@ table {
 @media only screen and (min-width: 720px){
   .box-captcha{
     flex-direction: row;
+    background: 
+    linear-gradient(#fff 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(to bottom, #eaa754, #fffe35) border-box;
+    border: 3px solid transparent;
+    border-radius: 15px;
     border-radius: 23px;
   }
   .box-captcha-2{
