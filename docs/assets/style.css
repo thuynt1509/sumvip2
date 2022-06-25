@@ -266,7 +266,7 @@ table {
   position: absolute;
   left: 50%;
   margin-left: -30.6944444444vw;
-  bottom: -10.4166666667vw;
+  bottom: -11.8055555556vw;
   cursor: pointer;
 }
 .wrapper-sum .btn-register.btn-login {
@@ -308,7 +308,7 @@ table {
 }
 .wrapper-sum .btn-download {
   display: block;
-  margin: 2.7777777778vw auto;
+  margin: 0 auto 2.7777777778vw;
   background: url("../images/bvd-tach_0019_Group-1.png") 0/100% no-repeat;
   width: 62.2222222222vw;
   height: 15.8333333333vw;
@@ -616,7 +616,7 @@ table {
     width: 443px;
     height: 140px;
     margin-left: -221px;
-    bottom: -75px;
+    bottom: -85px;
   }
   .wrapper-sum .title-1 {
     width: 395px;

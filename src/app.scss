@@ -267,7 +267,7 @@ table {
     position: absolute;
     left: 50%;
     margin-left: vwm(-221px);
-    bottom: vwm(-75px);
+    bottom: vwm(-85px);
     cursor: pointer;
     &.btn-login{
       background: url("../images/btn-login.png") 0/100% no-repeat;
@@ -309,7 +309,7 @@ table {
   }
   .btn-download{
     display: block;
-    margin: vwm(20px) auto;
+    margin: 0 auto vwm(20px);
     background: url("../images/bvd-tach_0019_Group-1.png") 0/100% no-repeat;
     width: vwm(448px);
     height: vwm(114px);
@@ -637,7 +637,7 @@ table {
       width: 443px;
       height: 140px;
       margin-left: -221px;
-      bottom: -75px;
+      bottom: -85px;
     }
     .title-1{
       width: 395px;
