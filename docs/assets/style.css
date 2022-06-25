@@ -251,10 +251,10 @@ table {
 }
 .wrapper-sum .box-login .tab-content {
   padding: 2.7777777778vw 2.7777777778vw 9.7222222222vw;
-  border: 0.4166666667vw solid #3a1e58;
-  box-shadow: inset 0 0 10px #474699;
-  border-radius: 1.3888888889vw;
-  background-color: #000;
+  background: linear-gradient(#000 0 0) padding-box, linear-gradient(to bottom, #eaa754, #fffe35) border-box;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  box-shadow: 0px 1px 6px #8d560c;
   position: relative;
   margin-bottom: 11.1111111111vw;
 }
